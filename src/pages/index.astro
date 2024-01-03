@@ -2,12 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import { Image } from 'astro:assets';
+import image from '../images/1.jpg'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 
-		<Image class="w-full h-full object-cover" src="/images/1.jpg" alt="6" height="300" width="200"/>
+		<Image class="w-full h-full object-cover" src={image} alt="6" height="300" width="200"/>
 		<svg
 			class="astro-a"
 			width="495"
