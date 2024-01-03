@@ -1,14 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import { Image } from 'astro:assets';
-import image from '../images/1.jpg'
+import { Image, Picture } from 'astro:assets';
+
+import image2 from '../images/hero2.jpg'
+import image3 from '../images/hero3.jpg'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-
-		<Image class="w-full h-full object-cover" src={image} alt="6" height="300" width="200"/>
+		<img src="/images/1.jpg " />
+		<Picture formats={['avif', 'webp']} class="w-full h-full object-cover" src={image2} alt="6" height="300" width="200"/>
+		<Picture formats={['avif', 'webp']} class="w-full h-full object-cover" src={image3} alt="6" height="300" width="200"/>
+		
+		
 		<svg
 			class="astro-a"
 			width="495"

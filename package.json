@@ -5,13 +5,18 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && jampack ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "astro": "^4.0.9",
+    "fs": "^0.0.1-security",
+    "sharp": "^0.33.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@divriots/jampack": "^0.23.1"
   }
 }
